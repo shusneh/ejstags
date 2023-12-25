@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>EJS Tags</title>
+</head>
+
+<body  >
+  <div class="me">
+  <h1>
+    <!-- Tite goes here -->
+  </h1>
+  <p>Current second: <%= seconds %>
+    <!-- Current second goes here -->
+  </p>
+  <% if (seconds % 2===0) {  %>
+  
+   <%  for(let i=0;i<items.length;i++){%>      
+    <p> <%= items[i]  %></p>
+  <% } %> 
+    <!-- List goes here if current second is even. -->
+    <!-- Otherwise it should display the following: -->
+    <!-- <p>No items to display</p> -->
+ 
+  <% } else { %>
+  <p>No items to display</p>
+  <% } %>
+  <p>
+    <!-- HTML content goes here -->
+  </p>
+  
+</body>
+
+</html>
